@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Beams - Forces Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cantilever">Cantilever Beam</string>
+    <string name="cantilever_end_load">Cantilever - end load</string>
+    <string name="cantilever_int_load">Cantilever - intermediate load</string>
+    <string name="cantilever_uniform_load">Cantilever - uniform load</string>
+    <string name="simple_supports_center_load">Simple supports - center load</string>
+    <string name="simple_supports_int_load">Simple supports - intermediate load</string>
+    <string name="simple_supports_uniform_load">Simple supports - uniform load</string>
+    <string name="enter_elasticity">Elasticity (E) = </string>
+    <string name="enter_inertia">Moment of inertia (I) = </string>
+    <string name="enter_beam_length">Beam length (L) = </string>
+    <string name="enter_force">Force (F) = </string>
+    <string name="enter_a_length">Partial length (a) = </string>
+    <string name="enter_b_length">Partial length, b = </string>
+    <string name="enter_uniform_load">Uniform load (w) = </string>
+    <string name="calculate_button_text">Calculate</string>
+    <string name="save_button_text">Save</string>
+    <string name="load_button_text">Load</string>
+    <string name="title_activity_simple_supports">Simple Supports</string>
+    <string name="cantilever_image_desc">Cantilever beam</string>
+    <string name="simple_supports_image_desc">Simply supported beam</string>
+
+</resources>

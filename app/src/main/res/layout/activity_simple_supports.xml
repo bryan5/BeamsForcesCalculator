@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.self.bryan.beams_forcescalculator.SimpleSupportsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/simple_supports_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/simple_supports_image_desc"/>
+
+        <TableRow
+            android:id="@+id/elasticity_row_ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/simple_supports_image">
+
+            <TextView
+                android:text="@string/enter_elasticity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/ss_elasticity_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/inertia_row_ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/elasticity_row_ss">
+
+            <TextView
+                android:text="@string/enter_inertia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/ss_inertia_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/length_row_ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/inertia_row_ss">
+
+            <TextView
+                android:text="@string/enter_beam_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/ss_length_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/force_row_ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/length_row_ss">
+
+            <TextView
+                android:text="@string/enter_force"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/ss_force_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/uniform_load_row_ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/force_row_ss">
+
+            <TextView
+                android:text="@string/enter_uniform_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/ss_uniform_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/ss_button_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_below="@id/uniform_load_row_ss">
+
+            <Button
+                android:id="@+id/ss_calculate_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/calculate_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSSCalculateButton"/>
+
+            <Button
+                android:id="@+id/ss_save_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/save_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSSSaveButton"/>
+
+            <Button
+                android:id="@+id/ss_load_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/load_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSSLoadButton"/>
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/ss_results_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_below="@id/ss_button_row"/>
+
+    </RelativeLayout>
+
+</ScrollView>
